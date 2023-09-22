@@ -28,7 +28,7 @@ spec:
         name: {{ $issuerSecretName }}
         key: eab-key
       keyAlgorithm: HMAC-SHA256
-    {{- else }}
+    {{- end }}
     solvers:
     {{- if eq .type "HTTP01" }}
     - http01:
