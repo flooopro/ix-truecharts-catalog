@@ -27,7 +27,6 @@ spec:
       keyRef:
         name: {{ $issuerSecretName }}
         key: eab-key
-      keyAlgorithm: HS256
     {{- end }}
     solvers:
     {{- if eq .type "HTTP01" }}
