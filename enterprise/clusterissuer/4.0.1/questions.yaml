@@ -85,7 +85,7 @@ questions:
               description: "External Account Binding KeyID"
               schema:
                 type: string
-                show_if: [["server", "=", "ZeroSSL"]]
+                show_if: [["server", "=", "https://acme.zerossl.com/v2/DV90"]]
                 required: true
                 default: ""
             - variable: eabKey
@@ -93,7 +93,7 @@ questions:
               description: "Secret External Account Binding Key"
               schema:
                 type: string
-                show_if: [["server", "=", "ZeroSSL"]]
+                show_if: [["server", "=", "https://acme.zerossl.com/v2/DV90"]]
                 required: true
                 default: ""
             - variable: cfapikey
