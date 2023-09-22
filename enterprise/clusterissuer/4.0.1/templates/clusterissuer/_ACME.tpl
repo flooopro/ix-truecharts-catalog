@@ -24,7 +24,7 @@ spec:
     {{- if .eabKeyId }}
     externalAccountBinding:
       keyID: {{ .eabKeyId }}
-      keyRef:
+      keySecretRef:
         name: {{ $issuerSecretName }}
         key: eab-key
     {{- end }}
